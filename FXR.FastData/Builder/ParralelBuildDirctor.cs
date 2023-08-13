@@ -28,8 +28,6 @@ public class ParralelBuildDirctor<IBuildableObject> : IBuilder<IBuildableObject>
 
     public List<IBuildable> GetObjects()
     {
-        var result = new List<IBuildable>();
-        result.AddRange(_resultObjects);
-        return result;
+        return _resultObjects;
     }
 }
